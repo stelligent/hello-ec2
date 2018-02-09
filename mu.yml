@@ -1,0 +1,15 @@
+---
+
+  environments:
+    - name: acceptance
+      provider: ec2
+    - name: production
+      provider: ec2
+  
+  service:
+    healthEndpoint: /
+    port: 80
+    pathPatterns:
+      - /*
+    database:
+      name: sample
