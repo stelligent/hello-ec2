@@ -1,5 +1,4 @@
 ---
-
   environments:
     - name: acceptance
       provider: ec2
@@ -7,9 +6,5 @@
       provider: ec2
   
   service:
-    healthEndpoint: /
-    port: 80
-    pathPatterns:
-      - /*
     database:
       name: sample

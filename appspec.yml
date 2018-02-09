@@ -1,6 +1,4 @@
+# This file contains the instruction for configuration via CodeDeploy of EC2 instances for this service. 
+# For more details, see https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html 
 version: 0.0
 os: linux
-
-BeforeInstall:
-  - location: install_nginx.sh
-    timeout: 300
